@@ -19,7 +19,7 @@ uint64_t generate_rand_key64() {
 	srand(time(0));
 
 	for(i = 0; i < BLOCK_SIZE_IN_BYTES; i++)
-		key[i] = rand() % 128; // get a random unsigned 8-bit number
+		key[i] = rand() % 255; // get a random unsigned 8-bit number
 
 	key_val = (uint64_t*)key;
 
